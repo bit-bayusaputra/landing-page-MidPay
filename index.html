@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MidPay</title>
+
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header
+      class="px-5 md:px-20 lg:px-40 flex justify-between items-center h-[80px] border-b border-b-purple-500 fixed top-0 left-0 w-full bg-white"
+    >
+      <h1
+        class="text-3xl font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text"
+      >
+        MidPay
+      </h1>
+      <div class="hidden lg:block w-full" id="menu">
+        <div
+          class="w-full py-5 absolute top-[80px] left-0 flex flex-col text-center gap-5 bg-gradient-to-b from-purple-500 to-blue-500 lg:static lg:flex-row lg:justify-between lg:bg-none lg:pl-20"
+        >
+          <nav class="flex flex-col text-center gap-5 lg:flex-row">
+            <a
+              href=""
+              class="py-4 text-base font-semibold transition-all text-white hover:text-purple-500 hover:bg-white hover:tracking-wide hover:opacity-95 lg:text-purple-700"
+              >Services</a
+            >
+            <a
+              href=""
+              class="py-4 text-base font-semibold transition-all text-white hover:text-purple-500 hover:bg-white hover:tracking-wide hover:opacity-95 lg:text-purple-700"
+              >Business</a
+            >
+            <a
+              href=""
+              class="py-4 text-base font-semibold transition-all text-white hover:text-purple-500 hover:bg-white hover:tracking-wide hover:opacity-95 lg:text-purple-700"
+              >Developer</a
+            >
+            <a
+              href=""
+              class="py-4 text-base font-semibold transition-all text-white hover:text-purple-500 hover:bg-white hover:tracking-wide hover:opacity-95 lg:text-purple-700"
+              >Contact</a
+            >
+            <a
+              href=""
+              class="py-4 text-base font-semibold transition-all text-white hover:text-purple-500 hover:bg-white hover:tracking-wide hover:opacity-95 lg:text-purple-700"
+              >Help</a
+            >
+          </nav>
+          <a
+            href=""
+            class="py-4 text-base font-semibold transition-all text-white hover:text-purple-500 hover:bg-white hover:tracking-wide hover:opacity-95 lg:text-purple-700"
+            >Sign up</a
+          >
+        </div>
+      </div>
+      <div
+        class="cursor-pointer text-3xl text-slate-800 transtition-all hover:text-purple-600 lg:hidden"
+        id="menu-open"
+      >
+        <i class="bx bx-menu" id="open"></i>
+      </div>
+      <div
+        class="cursor-pointer text-3xl text-slate-800 transtition-all hover:text-purple-600 hidden lg:hidden"
+        id="menu-close"
+      >
+        <i class="bx bx-x"></i>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- section hero start -->
+    <section
+      class="px-5 md:px-20 lg:px-40 flex items-center flex-col-reverse mt-[100px] lg:flex-row"
+    >
+      <div class="mt-5">
+        <h1 class="text-3xl font-bold xl:text-4xl">
+          Best Payment experience with
+          <span
+            class="font-extrabold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text"
+            >MidPay</span
+          >
+        </h1>
+        <p class="text-sm text-slate-500 my-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil
+          cupiditate maxime atque quo. Cum!
+        </p>
+        <div class="flex items-center gap-5">
+          <a
+            href=""
+            class="bg-purple-600 text-white text-sm font-semibold py-2 px-5 rounded-lg transition-all hover:bg-purple-500"
+            >Download Now!</a
+          >
+          <a
+            href=""
+            class="text-sm font-semibold py-2 px-5 transition-all hover:opacity-70 flex gap-1 items-center"
+          >
+            <i class="bx bx-play-circle text-lg"></i>
+            Watch Demo
+          </a>
+        </div>
+      </div>
+      <div class="">
+        <img
+          src="dist/img/hero.svg"
+          alt="mobile-pay"
+          class="w-full object-cover object-center"
+        />
+      </div>
+    </section>
+    <!-- section hero end -->
+
+    <!-- Section featureds start -->
+    <section class="px-5 mt-3 py-10 bg-purple-300 md:px-20 lg:px-40 lg:mt-0">
+      <div class="flex flex-col gap-5 lg:flex-row">
+        <div class="flex gap-5 items-center">
+          <div class="text-5xl text-purple-800">
+            <i class="bx bxs-check-shield"></i>
+          </div>
+          <div>
+            <h2 class="text-purple-800 text-lg font-bold">Guaranted Safety</h2>
+            <p class="text-slate-700 text-sm font-semibold">
+              End-to-end security will protect user's data privacy safety
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-center">
+          <div class="text-5xl text-purple-800">
+            <i class="bx bxs-credit-card"></i>
+          </div>
+          <div>
+            <h2 class="text-purple-800 text-lg font-bold">Add New Card</h2>
+            <p class="text-slate-700 text-sm font-semibold">
+              Create a new card anytime and anywhere easily for any banks.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-center">
+          <div class="text-5xl text-purple-800">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+          </div>
+          <div>
+            <h2 class="text-purple-800 text-lg font-bold">
+              Monitor Your Finance
+            </h2>
+            <p class="text-slate-700 text-sm font-semibold">
+              By using AI technology, you can maintain financial with MidPay
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section featureds End -->
+
+    <!-- Section dashboard start -->
+    <section
+      class="my-5 px-5 md:px-20 lg:px-40 flex flex-col items-center lg:flex-row lg:my-0 lg:mt-5"
+    >
+      <div class="w-full">
+        <img
+          src="dist/img/dashboard.svg"
+          alt="dashboard-featured"
+          class="object-cover object-center"
+        />
+      </div>
+      <div class="my-5">
+        <h1 class="text-3xl font-bold capitalize">
+          now you can monitor from dashboard view
+        </h1>
+        <ul
+          class="mb-5 mt-2 list-disc px-10 text-base text-slate-700 font-semibold text-justify gap-3"
+        >
+          <li class="my-2">
+            This app innovate us to be advanced on many platforms including the
+            dashbard
+          </li>
+          <li class="my-2">
+            You can see, manage, edit, and do everything on dashboard features
+            for free
+          </li>
+        </ul>
+        <a
+          href=""
+          class="py-2 px-5 bg-purple-600 rounded-lg text-sm text-white font-semibold transition-all hover:bg-purple-500"
+          >Go To Dashboard</a
+        >
+      </div>
+    </section>
+    <!-- Section dashboard end -->
+
+    <!-- Section how it works start -->
+    <section class="bg-purple-300 px-5 md:px-20 lg:px-40">
+      <div class="text-center pt-5">
+        <h1 class="text-3xl font-bold text-purple-800">How it Works</h1>
+        <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-5 py-5 lg:flex-row"
+      >
+        <div class="flex flex-col items-center text-center gap-1">
+          <div
+            class="bg-purple-800 h-10 w-10 rounded-full flex justify-center items-center text-lg text-white font-bold"
+          >
+            1
+          </div>
+          <h1 class="text-lg font-bold text-purple-800">Register</h1>
+          <p class="text-sm text-purple-700">
+            Register yourself as a MidPay user
+          </p>
+        </div>
+        <i
+          class="bx bx-dots-vertical-rounded text-3xl text-purple-800 lg:rotate-90"
+        ></i>
+        <div class="flex flex-col items-center text-center gap-1">
+          <div
+            class="bg-purple-800 h-10 w-10 rounded-full flex justify-center items-center text-lg text-white font-bold"
+          >
+            2
+          </div>
+          <h1 class="text-lg font-bold text-purple-800">Add New Card</h1>
+          <p class="text-sm text-purple-700">
+            Create a new card more than two anythime
+          </p>
+        </div>
+        <i
+          class="bx bx-dots-vertical-rounded text-3xl text-purple-800 lg:rotate-90"
+        ></i>
+        <div class="flex flex-col items-center text-center gap-1">
+          <div
+            class="bg-purple-800 h-10 w-10 rounded-full flex justify-center items-center text-lg text-white font-bold"
+          >
+            3
+          </div>
+          <h1 class="text-lg font-bold text-purple-800">Success</h1>
+          <p class="text-sm text-purple-700">
+            Finally you can use MidPay all features
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section how it works end -->
+
+    <!-- Section Busiines start -->
+    <section
+      class="px-5 py-5 flex flex-col items-center gap-5 md:px-20 lg:px-40 lg:flex-row"
+    >
+      <div>
+        <h2 class="font-bold text-3xl">
+          Money-Saving App might help your financial
+        </h2>
+        <p class="text-semibold text-slate-700 text-sm py-3">
+          We make sure the best quantly service we provide for our users to-use
+          MidPay
+        </p>
+        <div class="grid grid-cols-2 gap-5">
+          <div class="flex items-center flex-row gap-3 text-3xl text-green-600">
+            <i class="bx bxs-check-circle"></i>
+            <h3 class="text-slate-700 text-base font-semibold">
+              Online Transaction
+            </h3>
+          </div>
+          <div class="flex items-center flex-row gap-3 text-3xl text-green-600">
+            <i class="bx bxs-check-circle"></i>
+            <h3 class="text-slate-700 text-base font-semibold">
+              More Than 1 Cands
+            </h3>
+          </div>
+          <div class="flex items-center flex-row gap-3 text-3xl text-green-600">
+            <i class="bx bxs-check-circle"></i>
+            <h3 class="text-slate-700 text-base font-semibold">
+              Split Payments
+            </h3>
+          </div>
+
+          <div class="flex items-center flex-row gap-3 text-3xl text-green-600">
+            <i class="bx bxs-check-circle"></i>
+            <h3 class="text-slate-700 text-base font-semibold">
+              User-Friendly
+            </h3>
+          </div>
+          <div class="flex items-center flex-row gap-3 text-3xl text-green-600">
+            <i class="bx bxs-check-circle"></i>
+            <h3 class="text-slate-700 text-base font-semibold">100% Trusfed</h3>
+          </div>
+          <div class="flex items-center flex-row gap-3 text-3xl text-green-600">
+            <i class="bx bxs-check-circle"></i>
+            <h3 class="text-slate-700 text-base font-semibold">Accessible</h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="dist/img/financial.svg" alt="payments" />
+      </div>
+    </section>
+    <!-- Section Busiines End -->
+
+    <!-- Section FAQs start -->
+    <section
+      class="px-5 py-5 md:px-20 lg:px-40 bg-purple-300 flex flex-col items-center gap-5 lg:flex-row lg:gap-10"
+    >
+      <img
+        src="dist/img/faq.svg"
+        alt="FAQs"
+        class="object-cover object-center"
+      />
+
+      <div class="my-5">
+        <h1
+          class="text-3xl font-bold text-purple-800 my-5 text-center md:text-left"
+        >
+          Frequently Asked Questions
+        </h1>
+        <ul class="list-decimal list-inside">
+          <div
+            class="max-w-[410px] flex justify-between items-center gap-2 bg-white p-5 rounded-xl shadow-sm mb-2 panel"
+          >
+            <div>
+              <li class="text-purple-800 font-bold text-base">
+                We have the features that help your finance
+              </li>
+              <p id="faq" class="text-sm text-slate-600 ml-4 hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, consequuntur?
+              </p>
+            </div>
+            <button
+              id="openFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600"
+            >
+              +
+            </button>
+            <button
+              id="closeFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600 hidden"
+            >
+              -
+            </button>
+          </div>
+          <div
+            class="max-w-[410px] flex justify-between items-center gap-5 bg-white p-5 rounded-xl shadow-sm mb-2 panel"
+          >
+            <div class="">
+              <li class="text-purple-800 font-bold text-base">
+                How to make a new account?
+              </li>
+              <p id="faq" class="text-sm text-slate-600 ml-4 hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, consequuntur?2
+              </p>
+            </div>
+            <button
+              id="openFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600"
+            >
+              +
+            </button>
+            <button
+              id="closeFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600 hidden"
+            >
+              -
+            </button>
+          </div>
+          <div
+            class="max-w-[410px] flex justify-between items-center gap-5 bg-white p-5 rounded-xl shadow-sm mb-2 panel"
+          >
+            <div class="">
+              <li class="text-purple-800 font-bold text-base">
+                Can i have two cards on the account?
+              </li>
+              <p id="faq" class="text-sm text-slate-600 ml-4 hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, consequuntur?
+              </p>
+            </div>
+            <button
+              id="openFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600"
+            >
+              +
+            </button>
+            <button
+              id="closeFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600 hidden"
+            >
+              -
+            </button>
+          </div>
+          <div
+            class="max-w-[410px] flex justify-between items-center gap-5 bg-white p-5 rounded-xl shadow-sm mb-2 panel"
+          >
+            <div class="">
+              <li class="text-purple-800 font-bold text-base">
+                How to cancel my transaction?
+              </li>
+              <p id="faq" class="text-sm text-slate-600 ml-4 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Placeat deserunt mollitia minus incidunt alias ipsa, quo quae
+                veritatis qui voluptates!
+              </p>
+            </div>
+            <button
+              id="openFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600"
+            >
+              +
+            </button>
+            <button
+              id="closeFaq"
+              type="button"
+              class="text-slate-800 text-2xl font-bold hover:text-slate-600 hidden"
+            >
+              -
+            </button>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <!-- Section FAQs End -->
+
+    <!-- Sextion Download start -->
+    <section class="px-5 md:px-20 lg:px-40 mt-5 mb-10 text-center">
+      <h1 class="text-3xl font-bold">All Banks in One App</h1>
+      <p class="text-sm text-slate-600">
+        So, what are you waiting for? Download and use awesome featuresnow!
+      </p>
+      <div class="w-full flex justify-center items-center">
+        <img
+          class="object-contain object-center"
+          src="dist/img/download-app.png"
+          alt="download app"
+        />
+      </div>
+      <div class="flex justify-center gap-5">
+        <a
+          href=""
+          class="bg-slate-900 text-white text-sm font-semibold py-2 px-5 rounded-lg transition-all hover:bg-slate-700"
+        >
+          <i class="bx bxl-play-store bx-flip-vertical"></i>
+          Google Play
+        </a>
+        <a
+          href=""
+          class="bg-slate-900 text-white text-sm font-semibold py-2 px-5 rounded-lg transition-all hover:bg-slate-700"
+        >
+          <i class="bx bxl-apple"></i>
+          App Store
+        </a>
+      </div>
+    </section>
+    <!-- Sextion Download end -->
+
+    <script>
+      const menuOpen = document.querySelector("#menu-open");
+      const menuClose = document.querySelector("#menu-close");
+      const menu = document.querySelector("#menu");
+
+      menuOpen.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menuOpen.classList.toggle("hidden");
+        menuClose.classList.toggle("hidden");
+      });
+
+      menuClose.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menuOpen.classList.toggle("hidden");
+        menuClose.classList.toggle("hidden");
+      });
+
+      const panel = document.querySelectorAll(".panel");
+      // console.log(openFaq);
+      panel.forEach((item) => {
+        const question = item.querySelector("#openFaq");
+        question.addEventListener("click", (e) => {
+          let open = e.target;
+          open.classList.toggle("hidden");
+
+          const close = item.querySelector("#closeFaq");
+          close.classList.toggle("hidden");
+
+          const answer = item.querySelector("#faq");
+          answer.classList.toggle("hidden");
+        });
+
+        const close = item.querySelector("#closeFaq");
+        close.addEventListener("click", (e) => {
+          let c = e.target;
+          c.classList.toggle("hidden");
+
+          question.classList.toggle("hidden");
+
+          const answer = item.querySelector("#faq");
+          answer.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
